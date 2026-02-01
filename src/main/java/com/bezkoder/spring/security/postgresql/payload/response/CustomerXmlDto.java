@@ -4,8 +4,11 @@ import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlType;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.util.UUID;
 
+@XmlRootElement(name = "customer")
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "customer", propOrder = {
     "idCustomer",
